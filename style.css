@@ -5,11 +5,20 @@
 }
 
 main {
-    background-color: lightgray;
-    height: 100%
+    background-color: #d3d3d3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
+.container{
+    margin: 0 auto;
+    width: 1400px;
+   height: calc(100vh - 40px);
+   
+  }
+  
 
 /*sidebar*/
 .sidebar {
@@ -72,11 +81,21 @@ main {
     padding: 0 10px;
 }
 
+.cerca{
+    position: relative;
+}
 .cerca input{
     width: 100%;
     outline: none;
     border: none;
     height: 30px;
+    padding-left: 30px;
+}
+
+.cerca i{
+    position: absolute;
+    left: 15px;
+
 }
 
 
@@ -89,18 +108,15 @@ main {
    
 }
 
-
-
-
 .container-top{
     height: 10%;
     background-color: beige;
 }
 
 .container-center{
-    background-color: blueviolet;
-    height: 80%;
+height: 80%;
    overflow-y:  scroll;
+   background: url(img/mine.jpg);
    
 }
 
