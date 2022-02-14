@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: lightgray;
+    height: 100%
+}
+
+
+
+/*sidebar*/
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: yellowgreen;
+    float: left;
+}
+
+.utente{
+    height: 10%;
+    background-color: beige;
+    border-right: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    }
+    
+    .utente img{
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .utente-icon ul{
+    list-style: none;
+    display: flex;
+    }
+
+    .utente-icon li{
+        margin-left: 20px;
+    }
+          
+    .notifiche{
+    height: 10%;
+    background-color:aqua;
+    display: flex;
+    align-items: center;
+}
+
+.icons-notifiche{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+
+.text-icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.cerca{
+    height: 8%;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.cerca input{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 30px;
+}
+
+
+/*container*/
+
+.container-main {
+    width: calc(100% - 300px);
+    height: 100%;
+    float: left;
+   
+}
+
+
+
+
+.container-top{
+    height: 10%;
+    background-color: beige;
+}
+
+.container-center{
+    background-color: blueviolet;
+    height: 80%;
+   overflow-y:  scroll;
+   
+}
+
+.container-bottom{
+    height: 10%;
+    background-color: aqua;
+    
+}
+
+
