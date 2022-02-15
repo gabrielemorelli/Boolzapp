@@ -5,7 +5,7 @@
 }
 
 main {
-    background-color: #d3d3d3;
+    background-image: linear-gradient(180deg,rgba(29,151,137,255) 15%, rgba(219,219,211,255) 15%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -24,13 +24,13 @@ main {
 .sidebar {
     width: 300px;
     height: 100%;
-    background-color: yellowgreen;
+    background-color:white;
     float: left;
 }
 
 .utente{
     height: 10%;
-    background-color: beige;
+    background-color: rgba(234,234,234,255);
     border-right: 1px solid gray;
     display: flex;
     align-items: center;
@@ -54,22 +54,26 @@ main {
           
     .notifiche{
     height: 10%;
-    background-color:aqua;
+    background-color:rgba(142,218,252,255);
     display: flex;
     align-items: center;
 }
 
-.icons-notifiche{
+    .icons-notifiche{
     padding: 10px;
     border-radius: 50%;
     background-color: white;
-}
+    }
 
 
 
 .text-icons{
     display: flex;
     flex-direction: column;
+}
+
+.text-icons a{
+    color: black;
 }
 
 .cerca{
@@ -108,6 +112,12 @@ main {
 }
 
 
+
+.contact.active, .contact:hover {
+    background-color: rgba(234,234,234,255);
+}
+
+
 /*container*/
 
 .container-main {
@@ -117,22 +127,88 @@ main {
    
 }
 
-.container-top{
+.header{
     height: 10%;
-    background-color: beige;
+    background-color: rgba(234,234,234,255);
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
 }
 
 .container-center{
 height: 80%;
-   overflow-y:  scroll;
-   background: url(img/mine.jpg);
+overflow-y:  scroll;
+background: url(img/mine.jpg);
+display: flex;
+flex-direction: column;
+padding: 30px 50px;
    
 }
 
 .container-bottom{
     height: 10%;
-    background-color: aqua;
-    
+    background-color:rgba(243,238,234,255);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
+.immagine-header img{
+    width: 50px;
+    border-radius: 50%;
+ }
 
+ .header-icons {
+     margin-left: auto;
+ }
+
+ .header-icons i{
+     margin-left: 20px;
+ }
+
+ .text-header{
+     display:flex;
+     flex-direction: column;
+ }
+
+ .messagge{
+     width: 200px;
+     padding: 20px;
+     border-radius: 10px;
+     min-width: 150px;
+     max-width: 40%;
+    
+ }
+
+ .messagge.ricevuto{
+     background-color: white;
+ }
+
+ .messagge.send{
+     background-color: greenyellow;
+     margin-left: auto;
+ }
+ 
+ .sentdata{
+     font-size: 15px;
+     color: lightgray;
+     text-align: right;
+     margin-top: 5px;
+ }
+
+.container-bottom input{
+    width: 70%;
+    padding: 20px;
+    outline: none;
+    border: none;
+}
+
+.container-bottom .fa-face-smile{
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.container-bottom .fa-microphone{
+    font-size: 30px;
+    margin-right: 20px;
+}
