@@ -12,11 +12,11 @@ main {
     justify-content: center;
 }
 
+
 .container{
     margin: 0 auto;
     width: 1400px;
    height: calc(100vh - 40px);
-   
   }
   
 
@@ -95,7 +95,16 @@ main {
 .cerca i{
     position: absolute;
     left: 15px;
+}
 
+.contact{
+    display: flex;
+    padding: 10px;
+}
+.contact-logo img{
+    height: 60px;
+    border-radius: 50%;
+    padding: 0px 10px;
 }
 
 
