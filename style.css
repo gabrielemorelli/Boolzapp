@@ -111,6 +111,16 @@ main {
     padding: 0px 10px;
 }
 
+.contact-date{
+    font-size: 10px;
+    margin-left: 30px;
+    color: lightgray;
+}
+
+.contact-text{
+    color: lightgray;
+}
+
 
 
 .contact.active, .contact:hover {
@@ -180,17 +190,17 @@ padding: 30px 50px;
     
  }
 
- .message.ricevuto{
+ .message.received{
      background-color: white;
  }
 
- .message.send{
+ .message.sent{
      background-color: greenyellow;
      margin-left: auto;
  }
  
  .sentDate{
-     font-size: 15px;
+     font-size: 10px;
      color: lightgray;
      text-align: right;
      margin-top: 5px;
