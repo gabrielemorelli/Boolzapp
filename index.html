@@ -76,7 +76,7 @@
                     </div>
                     <div class="text-header">
                         <span class="contact-name">{{contacts[active].name}}</span>
-                        <span class="contact-last-acess">Ultimo accesso</span>
+                        <span class="contact-last-acess">Ultimo accesso oggi alle</span>
                     </div>
                     <div class="header-icons">
                         <i class="fas fa-circle-notch"></i>
@@ -131,7 +131,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="main.js"></script>
-    
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script>dayjs().format()</script>
 </body>
 
 </html>
