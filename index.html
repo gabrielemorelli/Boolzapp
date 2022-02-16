@@ -52,13 +52,14 @@
                  <input type="text" placeholder="Search or star new chat">
                 </div>
 
-                <div class="contact" v-for="contact in contacts">
+
+                <div class="contact" :class="(index == active)?'active':''" v-for="(contact, index) in contacts" @click="setConcatActive(index)">
                     <div class="contact-logo">
                         <img :src='`./img/avatar${contact.avatar}.jpg`'>
                     </div>
                     <div class="contact-info">
-                        <h3>{{contact.name}}</h3>
-                        <span>ciao</span>
+                        <h3><span>{{contact.name}}</span><span class="contact-date">15/02/2022 15:30:03</span></h3>
+                        <span></span>
                     </div>
                  
                 </div>
@@ -85,22 +86,30 @@
                 </div>
 
                 <div class="container-center">
-                    <div class="messagge ricevuto">
+
+                    <div v-for="message in contacts[active].messages" class="message" :class="message.status">
+                        {{message.message}}
+                        <div class="sentDate">{{message.date}}</div>
+                    </div>
+
+                    <!--
+                   
+                    <div class="message ricevuto">
                         ciao
-                        <div class="sentdata">
+                        <div class="sentDate">
                             15/02/2022 15:50
                         </div>
                     </div>
 
-                    <div class="messagge send">
+                    <div class="message send">
                         ciao
 
-                        <div class="sentdata">
+                        <div class="sentDate">
                             15/02/2022 15:50
                         </div>
                     </div>
 
-                    
+                    --> 
                     
                 </div>
 

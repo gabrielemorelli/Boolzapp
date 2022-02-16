@@ -85,12 +85,14 @@ const app = new Vue({
                     }
                 ],
             },
-        ]
-
+        ],
+        active: 0,
     },
 
     methods: {
-
+        setConcatActive(index) {
+            this.active = index;
+        }
     }
 }
 
