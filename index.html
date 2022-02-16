@@ -72,11 +72,11 @@
 
                 <div class="header">
                     <div class="immagine-header">
-                        <img src="img/avatar_1.jpg" alt="">
+                        <img  class="header-avatar" :src="`img/avatar${contacts[active].avatar}.jpg` " alt="">
                     </div>
                     <div class="text-header">
-                       <span class="header-name">Nome utente</span>
-                       <span class="header-lastAcess">Ultimo Accesso...</span>
+                        <span class="contact-name">{{contacts[active].name}}</span>
+                        <span class="contact-last-acess">Ultimo accesso</span>
                     </div>
                     <div class="header-icons">
                         <i class="fas fa-circle-notch"></i>
@@ -115,7 +115,8 @@
 
                 <div class="container-bottom">
                     <i class="fa-regular fa-face-smile"></i>
-                    <input type="text" placeholder="Search or star new chat">
+                    <input type="text"  class="message-input" placeholder="Search or star new chat" v-model="newMessage"
+                    @keyup.enter="sendMessage">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
             </div>
@@ -130,6 +131,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="main.js"></script>
+    
 </body>
 
 </html>
